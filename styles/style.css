@@ -13,6 +13,7 @@ body{
 
 :root{
     --color-dark-bg: #2A2C2E;
+    --color-light-bg: #F6F4F0; 
     --color-action: #F4CE47; 
     --color-bg-action: #F4BA30; 
     --text-color-black-60: #00000060; 
@@ -192,3 +193,106 @@ body{
     color: var(--text-color-black-38);
     text-decoration: line-through;
 }
+
+/*Footer*/
+
+footer{
+    padding-top: 22px;
+    background-color: var(--color-light-bg) ;
+}
+
+.upper_footer{
+    background-color: var(--color-dark-bg);
+    width: 1248px;
+    margin: 0 auto; 
+    height: 88px;
+    padding: 24px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social_icons img{
+    width: 24px;
+    height: 24px; 
+}
+
+.bottom_footer{
+    background-color: black;
+    width: 1248px;
+    margin: 0 auto; 
+    height: 40px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 24px;
+}
+
+.terms , .contact_info{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    font-size: 12px;
+
+}
+
+
+@media (max-width: 650px) {
+
+    .outer_header{
+        padding-top: 0px;
+        padding-bottom: 12px;
+    }
+
+    .inner_header{
+        flex-direction: column;
+        align-items: center;
+        width: 96vw;
+        height: auto;
+        border-radius: 20px;
+        font-size: 16px; 
+        padding: 36px 24px;
+        gap: 48px;
+    }
+
+    .nav_menu ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .inner_nav{
+        flex-wrap: nowrap;
+        font-size: 48px;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+
+    .movie_card_row{
+        margin: 0 auto;
+        width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px; 
+    }
+
+    .upper_footer{
+        width: 96vw; 
+        height: auto;
+    }
+
+    .bottom_footer{
+        width: 96vw;
+        height: auto;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+    
+}
+
